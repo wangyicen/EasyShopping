@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.feicui.edu.easyshop.MainActivity">
+    tools:context="com.feicui.edu.easyshop.activity.MainActivity">
 
     <android.support.v7.widget.Toolbar
+        android:id="@+id/main_tool_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        >
         <TextView
             android:id="@+id/main_title"
             android:layout_width="wrap_content"
@@ -36,6 +38,7 @@
         android:padding="5dp">
 
         <TextView
+            android:id="@+id/main_shpping"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -45,6 +48,7 @@
             android:drawableTop="@drawable/selector_shoping"/>
 
         <TextView
+            android:id="@+id/main_message"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,6 +58,7 @@
             android:drawableTop="@drawable/selector_message"/>
 
         <TextView
+            android:id="@+id/main_tel_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -63,10 +68,11 @@
             android:drawableTop="@drawable/selector_tel_list"/>
 
         <TextView
+            android:id="@+id/main_me"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="我们"
+            android:text="我的"
             android:textSize="18sp"
             android:gravity="center"
             android:drawableTop="@drawable/selector_me"/>
